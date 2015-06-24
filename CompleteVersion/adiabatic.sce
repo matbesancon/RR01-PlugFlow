@@ -3,7 +3,7 @@
 // Reaction : A + E --> R
 // given the final conversion rate, and the thermodynamic and kinetic data
 
-// Author : Mathieu Besançon
+// Author : Mathieu BesanÃ§on
 // UTC student
 // Process Engineering
 
@@ -75,18 +75,18 @@ end
 
 //-------------------------------------
 // Ploting the two functions T(x) and Xa(x)
-scd();
+scf();
 plot(x,Xa,'Color','blue');
 xgrid(1);
-title('Représentation (x,Xa)');
+title('Visualization of (x,Xa)');
 xlabel('x(m)');
 ylabel('Xa');
-scd();
+scf();
 plot(x,T,'Color','red');
 xgrid(1);
 title('(x,T)');
 xlabel('x(m)');
-ylabel('T(°C)');
+ylabel('T(Â°C)');
 
 
 //-------------------------------------
@@ -109,13 +109,12 @@ mu(i)= 2.414*10^-5 *10^(247.8/(T(i)-133.15))
 Re(i) = Qo*rho(i)*D/(mu(i)*S);
 end
 
-figure;
-hold on
+scf();
 plot(x,Re,'Color','b');
 title('Reynold''s number in the reactor');
 xlabel('x (m)');
 ylabel('Re');
-hold off;
+
 //The Reynolds number is high, therefore the plug-flow hypothesis is true
 //Rho variation is negligible
 
