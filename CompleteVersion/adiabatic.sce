@@ -7,6 +7,8 @@
 // UTC student
 // Process Engineering
 
+// Execute the enthalpy.sce first, which contains the enthalpy function
+
 Xa = [0:0.001:0.8435914];
 //Xa conversion rate, from 0 to the maximal conversion rate (given by the
 //system at the end / equilibrium
